@@ -7,4 +7,4 @@ DROP SCHEMA IF EXISTS vbzdata;
 CREATE SCHEMA `vbzdata` DEFAULT CHARACTER SET utf8mb4 ;
 USE vbzdata;
 
-
+as
