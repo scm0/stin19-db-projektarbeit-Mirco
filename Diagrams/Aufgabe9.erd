@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram version="1" name="Aufgabe9.erd">
+	<entities>
+		<data-source id="mysql8-17bd9f55439-7d7ad75f4d307473">
+			<entity id="1" name="ankunftszeiten" fq-name="vbzdata.ankunftszeiten" order="0" border-width="3" x="717" y="459">
+				<path name="vbzdata"/>
+			</entity>
+			<entity id="2" name="fahrzeiten_soll_ist" fq-name="vbzdata.fahrzeiten_soll_ist" order="1" x="20" y="319">
+				<path name="vbzdata"/>
+			</entity>
+			<entity id="3" name="haltepunkt" fq-name="vbzdata.haltepunkt" order="2" x="375" y="851">
+				<path name="vbzdata"/>
+			</entity>
+			<entity id="4" name="haltestelle" fq-name="vbzdata.haltestelle" order="3" x="723" y="879">
+				<path name="vbzdata"/>
+			</entity>
+			<entity id="5" name="linie" fq-name="vbzdata.linie" order="4" x="1172" y="513">
+				<path name="vbzdata"/>
+			</entity>
+		</data-source>
+	</entities>
+	<relations>
+		<relation name="ankunftszeiten_FK" fq-name="vbzdata.ankunftszeiten.ankunftszeiten_FK" type="fk" pk-ref="3" fk-ref="1"/>
+		<relation name="fahrzeiten_soll_ist_FK" fq-name="vbzdata.fahrzeiten_soll_ist.fahrzeiten_soll_ist_FK" type="fk" pk-ref="3" fk-ref="2"/>
+		<relation name="fahrzeiten_soll_ist_FK_1" fq-name="vbzdata.fahrzeiten_soll_ist.fahrzeiten_soll_ist_FK_1" type="fk" pk-ref="3" fk-ref="2"/>
+		<relation name="haltepunkt_FK" fq-name="vbzdata.haltepunkt.haltepunkt_FK" type="fk" pk-ref="4" fk-ref="3"/>
+		<relation name="ankunftszeiten_FK_1" fq-name="vbzdata.ankunftszeiten.ankunftszeiten_FK_1" type="fk" pk-ref="5" fk-ref="1"/>
+	</relations>
+</diagram>

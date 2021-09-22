@@ -1,0 +1,29 @@
+{
+	"folders": {},
+	"connections": {
+		"csvjdbc-17bd9f54228-29da7259a29391a2": {
+			"provider": "generic",
+			"driver": "csvjdbc",
+			"name": "Daten",
+			"save-password": true,
+			"read-only": false,
+			"virtual-model-id": "csvjdbc-17bd95dcdee-3620c345a03c114a",
+			"configuration": {
+				"database": "C:\\Users\\mirco\\OneDrive - TEKO Schweizerische Fachschule\\HF\\Datenbanken\\Projektarbeit\\Daten",
+				"url": "jdbc:relique:csv:C:\\Users\\mirco\\OneDrive - TEKO Schweizerische Fachschule\\HF\\Datenbanken\\Projektarbeit\\Daten",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false
+		}
+	}
+}

@@ -1,0 +1,187 @@
+{
+	"folders": {},
+	"connections": {
+		"csvjdbc-17bd9f54228-29da7259a29391a2": {
+			"provider": "generic",
+			"driver": "csvjdbc",
+			"name": "Daten",
+			"save-password": true,
+			"read-only": false,
+			"virtual-model-id": "csvjdbc-17bd95dcdee-3620c345a03c114a",
+			"configuration": {
+				"database": "C:\\Users\\mirco\\OneDrive - TEKO Schweizerische Fachschule\\HF\\Datenbanken\\Projektarbeit\\Daten",
+				"url": "jdbc:relique:csv:C:\\Users\\mirco\\OneDrive - TEKO Schweizerische Fachschule\\HF\\Datenbanken\\Projektarbeit\\Daten",
+				"type": "dev",
+				"auth-model": "native"
+			}
+		},
+		"mysql8-17bd9f55439-7d7ad75f4d307473": {
+			"provider": "mysql",
+			"driver": "mysql8",
+			"name": "localhost",
+			"save-password": true,
+			"read-only": false,
+			"virtual-model-id": "mysql8-1793bb9e206-6ca2ddeded935f8b",
+			"configuration": {
+				"host": "localhost",
+				"port": "3306",
+				"url": "jdbc:mysql://localhost:3306/",
+				"home": "C:\\Program Files\\MySQL\\MySQL Router 8.0",
+				"type": "dev",
+				"properties": {
+					"connectTimeout": "20000",
+					"allowPublicKeyRetrieval": "TRUE"
+				},
+				"auth-model": "native"
+			}
+		}
+	},
+	"virtual-models": {
+		"mysql8-1793bb9e206-6ca2ddeded935f8b": {
+			"ex04": {
+				"@properties": {
+					"erd.diagram.state": {
+						"serialized": "<diagram version=\"1\" name=\"ex04\" time=\"202105171400\"><entities><data-source id=\"mysql8-1793bb9e206-6ca2ddeded935f8b\"><entity id=\"1\" name=\"auto\" fq-name=\"ex04.auto\" order=\"0\" x=\"20\" y=\"20\"><path name=\"ex04\"/></entity><entity id=\"2\" name=\"person\" fq-name=\"ex04.person\" order=\"1\" x=\"186\" y=\"48\"><path name=\"ex04\"/></entity></data-source></entities><relations><relation name=\"pnr\" fq-name=\"ex04.auto.pnr\" type=\"fk\" pk-ref=\"2\" fk-ref=\"1\"/></relations></diagram>"
+					}
+				}
+			},
+			"ex07": {
+				":test": {
+					"properties": {
+						"erd.diagram.state": {
+							"serialized": "<diagram version=\"1\" name=\"New Object\" time=\"202105311452\"><entities><data-source id=\"mysql8-1793bb9e206-6ca2ddeded935f8b\"><entity id=\"1\" name=\"fahrzeughalter\" fq-name=\"ex07.fahrzeughalter\"><path name=\"ex07\"/></entity></data-source></entities><relations/></diagram>"
+						}
+					}
+				}
+			},
+			"ex12-classicmodels": {
+				":employees": {
+					"foreign-keys": [
+						{
+							"entity": "database://mysql8-1793bb9e206-6ca2ddeded935f8b/org.jkiss.dbeaver.ext.mysql.model.MySQLCatalog/ex12-classicmodels/org.jkiss.dbeaver.ext.mysql.model.MySQLTable/offices",
+							"constraint": "PRIMARY",
+							"attributes": {
+								"officeCode": "officeCode"
+							}
+						}
+					]
+				},
+				":customers": {
+					"foreign-keys": [
+						{
+							"entity": "database://mysql8-1793bb9e206-6ca2ddeded935f8b/org.jkiss.dbeaver.ext.mysql.model.MySQLCatalog/ex12-classicmodels/org.jkiss.dbeaver.ext.mysql.model.MySQLTable/employees",
+							"constraint": "PRIMARY",
+							"attributes": {
+								"customerNumber": "employeeNumber"
+							}
+						}
+					]
+				},
+				":payments": {
+					"attributes": {
+						"amount": {
+							"transforms": {
+								"custom": "org.jkiss.dbeaver.core.RadixAttributeTransformer",
+								"properties": {
+									"bits": "32",
+									"radix": "10",
+									"prefix": "true"
+								}
+							},
+							"properties": {
+								"bits": "32",
+								"radix": "10",
+								"prefix": "true"
+							}
+						}
+					},
+					"foreign-keys": [
+						{
+							"entity": "database://mysql8-1793bb9e206-6ca2ddeded935f8b/org.jkiss.dbeaver.ext.mysql.model.MySQLCatalog/ex12-classicmodels/org.jkiss.dbeaver.ext.mysql.model.MySQLTable/customers",
+							"constraint": "PRIMARY",
+							"attributes": {
+								"customerNumber": "customerNumber"
+							}
+						}
+					]
+				},
+				":orders": {
+					"foreign-keys": [
+						{
+							"entity": "database://mysql8-1793bb9e206-6ca2ddeded935f8b/org.jkiss.dbeaver.ext.mysql.model.MySQLCatalog/ex12-classicmodels/org.jkiss.dbeaver.ext.mysql.model.MySQLTable/customers",
+							"constraint": "PRIMARY",
+							"attributes": {
+								"customerNumber": "customerNumber"
+							}
+						}
+					]
+				},
+				":orderdetails": {
+					"foreign-keys": [
+						{
+							"entity": "database://mysql8-1793bb9e206-6ca2ddeded935f8b/org.jkiss.dbeaver.ext.mysql.model.MySQLCatalog/ex12-classicmodels/org.jkiss.dbeaver.ext.mysql.model.MySQLTable/orders",
+							"constraint": "PRIMARY",
+							"attributes": {
+								"orderNumber": "orderNumber"
+							}
+						},
+						{
+							"entity": "database://mysql8-1793bb9e206-6ca2ddeded935f8b/org.jkiss.dbeaver.ext.mysql.model.MySQLCatalog/ex12-classicmodels/org.jkiss.dbeaver.ext.mysql.model.MySQLTable/products",
+							"constraint": "PRIMARY",
+							"attributes": {
+								"productCode": "productCode"
+							}
+						}
+					]
+				},
+				":products": {
+					"foreign-keys": [
+						{
+							"entity": "database://mysql8-1793bb9e206-6ca2ddeded935f8b/org.jkiss.dbeaver.ext.mysql.model.MySQLCatalog/ex12-classicmodels/org.jkiss.dbeaver.ext.mysql.model.MySQLTable/productlines",
+							"constraint": "PRIMARY",
+							"attributes": {
+								"productLine": "productLine"
+							}
+						}
+					]
+				},
+				":office_list": {
+					"properties": {
+						"erd.diagram.state": {
+							"serialized": "<diagram version=\"1\" name=\"New Object\" time=\"202106141431\"><entities><data-source id=\"mysql8-1793bb9e206-6ca2ddeded935f8b\"><entity id=\"1\" name=\"offices\" fq-name=\"`ex12-classicmodels`.offices\"><path name=\"ex12-classicmodels\"/></entity></data-source></entities><relations/></diagram>"
+						}
+					}
+				},
+				":payment_larger_100000": {
+					"attributes": {
+						"amount": {
+							"transforms": {
+								"custom": "org.jkiss.dbeaver.core.RadixAttributeTransformer",
+								"properties": {
+									"bits": "32",
+									"radix": "10",
+									"prefix": "false"
+								}
+							},
+							"properties": {
+								"bits": "32",
+								"radix": "10",
+								"prefix": "false"
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false
+		}
+	}
+}
