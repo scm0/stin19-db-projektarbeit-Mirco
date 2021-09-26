@@ -1,5 +1,5 @@
 USE vbzdata;
-select distinct 
+SELECT DISTINCT 
 	fsi.fahrweg_id,
 	fsi.linie,
 	fsi.richtung,
@@ -7,6 +7,6 @@ select distinct
 	fsi.fw_lang
 FROM
 	fahrzeiten_soll_ist fsi
- where fsi.linie =6; 
+ WHERE fsi.linie =6; 
 
 	

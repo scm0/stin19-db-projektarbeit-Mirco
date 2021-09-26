@@ -9,4 +9,4 @@ SELECT DISTINCT
 	fsi.fw_lang
 FROM 
    fahrzeiten_soll_ist fsi
-    where fsi.linie =6; 
+    WHERE fsi.linie =6; 

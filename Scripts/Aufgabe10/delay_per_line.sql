@@ -6,6 +6,7 @@ select
 	h2.halt_lang,
 	h.GPS_Latitude,
 	h.GPS_Longitude,
+	a.fahrweg_id,
 	l.linie,
 	a.datumszeit_ist_an,
 	a.datumzeit_soll_an,
@@ -20,3 +21,4 @@ inner join linie l on
 	a.fahrweg_id =l.fahrweg_id 
 order by a.delay desc 
 limit 20;
+

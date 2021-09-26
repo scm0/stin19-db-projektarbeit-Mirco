@@ -1,4 +1,4 @@
-USE vbzdata;
+use vbzdata;
 
 create or replace view aufgabe12_driving_plan_line6
 as select
