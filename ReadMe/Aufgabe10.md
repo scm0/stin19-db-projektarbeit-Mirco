@@ -13,15 +13,19 @@ Für die Linie 6 wurden die 20 grösten Verspätungen ermittelt. Dazu sollte ein
 
 Das Script für die Liste sieht wie folgt aus:
 
-![script_liste](/Images/Aufgabe10/script_liste.jpg)
+![script_liste](/Images/Aufgabe10/script_liste.JPG)
 
 Link zum Script:[Script](/Scripts/Aufgabe10/delay_per_line.sql)
 
 Es wurde mit **order by delay** nach den grössten Verspätungen sortiert und mit **limit 20** auf 20 begrenzt.
 
+Die Liste sieht wie folgt aus:
+
+![script_liste](/Images/Aufgabe10/view.JPG)
+
 Für die Visualisierung wurde ein Script erstellt das eine Tabelle erzeugt die man als CSV file kann exportieren:
 
-![script_export](/Images/Aufgabe10/script_export.jpg)
+![script_export](/Images/Aufgabe10/script_export.JPG)
 
 Link zum Script:[Script](/Scripts/Aufgabe10/delay_per_line_export.sql)
 

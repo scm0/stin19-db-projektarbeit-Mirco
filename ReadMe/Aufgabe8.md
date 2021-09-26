@@ -7,7 +7,7 @@ Für die Abfrage musste **SELECT DISTINCT** verwendet werden, das eine Linie nur
 
 Das Script sieht wie folgt aus:
 
-![script](/Images/Aufgabe8/script8a.jpg)
+![script](/Images/Aufgabe8/script8a.JPG)
 
 Das Resultat sieht folgendermase aus:
 
@@ -23,11 +23,11 @@ Dazu wurde der Befehl in das Script eingefügt:
 
 Das Script sieht wie folgt aus:
 
-![script](/Images/Aufgabe8/script8b.jpg)
+![script](/Images/Aufgabe8/script8b.JPG)
 
 Das Resultat sieht folgendermase aus:
 
-![script](/Images/Aufgabe8/resultat8b.jpg)
+![script](/Images/Aufgabe8/resultat8b.JPG)
 
 Link zum Script:[Script](/Scripts/Aufgabe8/Aufgabe8b.sql)
 
@@ -44,10 +44,10 @@ Dazu wurden folgende Befehle benutzt:
 
 Das Script sieht wie folgt aus:
 
-![script](/Images/Aufgabe8/script8c.jpg)
+![script](/Images/Aufgabe8/script8c.JPG)
 
 Das Resultat sieht folgendermase aus:
 
-![script](/Images/Aufgabe8/resultat8c.jpg)
+![script](/Images/Aufgabe8/resultat8c.JPG)
 
 Link zum Script:[Script](/Scripts/Aufgabe8/create_line_table.sql)

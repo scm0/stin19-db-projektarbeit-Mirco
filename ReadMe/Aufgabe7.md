@@ -57,4 +57,4 @@ Link zum Script: [Aufgabe 7](/Scripts/Aufgabe7/Aufgabe7.sql)
 
 Die Anzeige sieht wie folgt aus(Ausschnitt):
 
-![view](/Images/Aufgabe7/view.jpg)
+![view](/Images/Aufgabe7/view.JPG)
