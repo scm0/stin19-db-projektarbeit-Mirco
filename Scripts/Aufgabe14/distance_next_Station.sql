@@ -1,9 +1,9 @@
 USE vbzdata;
 select
-	h.halt_lang,
-    h2.GPS_Latitude,
+	h.halt_lang as haltestelle_von,
+    h2.GPS_Latitude , 
     h2.GPS_Longitude,
-    h4.halt_lang ,
+    h4.halt_lang as haltestelle_zu,
     h3.GPS_Latitude,
     h3.GPS_Longitude,
     Round(ST_Distance_Sphere( point( h2.GPS_Longitude,h2.GPS_Latitude),point(h3.GPS_Longitude,h3.GPS_Latitude)),2) as distance
