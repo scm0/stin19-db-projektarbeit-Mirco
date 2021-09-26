@@ -54,3 +54,7 @@ Das auszuführende Script sieht wie folgt aus:
 ![script](/Images/Aufgabe7/script.jpg)
 
 Link zum Script: [Aufgabe 7](/Scripts/Aufgabe7/Aufgabe7.sql)
+
+Die Anzeige sieht wie folgt aus(Ausschnitt):
+
+![view](/Images/Aufgabe7/view.jpg)

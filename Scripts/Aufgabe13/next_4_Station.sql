@@ -3,11 +3,11 @@ set @lat=47.377220;
 set @lon=8.539902;
 
  select
-   h2.GPS_Latitude,
-   h2.GPS_Longitude,
-    '#ffff00'as color,
-    h.halt_lang,
-     Round(ST_Distance_Sphere( point( @lon,@lat),point(h2.GPS_Longitude,h2.GPS_Latitude)),2) as distance
+   h2.GPS_Latitude as lat,
+   h2.GPS_Longitude as lng,
+   h.halt_lang as  name,
+   '#ffff00'as color,
+    Round(ST_Distance_Sphere( point( @lon,@lat),point(h2.GPS_Longitude,h2.GPS_Latitude)),2) as distance
      
 from
     vbzdata.haltestelle h

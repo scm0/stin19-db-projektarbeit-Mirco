@@ -119,4 +119,4 @@ Für all diese Schritte erhält man am Schluss dieses Script:
 
 ![script](/Images/Aufgabe6/script.jpg)
 
-Link zum ERD:[Script](/Scripts/Aufgabe6/Aufgabe6.sql)
+Link zum Script:[Script](/Scripts/Aufgabe6/Aufgabe6.sql)

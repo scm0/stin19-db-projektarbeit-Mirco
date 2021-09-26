@@ -1,5 +1,5 @@
 USE vbzdata;
-create or replace view aufgabe7_time_difference
+CREATE OR replace view aufgabe7_time_difference
 AS SELECT 
     fsi.linie, 
     fsi.richtung, 
@@ -22,14 +22,15 @@ AS SELECT
     fsi.datumzeit_soll_ab_von, 
     fsi.datumzeit_ist_ab_von, 
     fsi.datum__nach, 
-    TIMEDIFF (datumzeit_soll_an_von, datumzeit_ist_an_von) as timediff_an, 
-    TIMESTAMPDIFF (SECOND, datumzeit_soll_an_von, datumzeit_ist_an_von) as timediff_an_seconds, 
-    TIMEDIFF (datumzeit_soll_ab_von, datumzeit_ist_ab_von) as timediff_ab, 
-    TIMESTAMPDIFF (SECOND, datumzeit_soll_ab_von, datumzeit_ist_ab_von) as timediff_ab_seconds, 
-    TIMESTAMPDIFF (SECOND, datumzeit_soll_an_von, datumzeit_soll_ab_von) as halt_soll_time_seconds, 
-    TIMESTAMPDIFF (SECOND, datumzeit_ist_an_von, datumzeit_ist_ab_von) as halt_ist_time_seconds 
+    TIMEDIFF (datumzeit_soll_an_von, datumzeit_ist_an_von) AS timediff_an, 
+    TIMESTAMPDIFF (SECOND, datumzeit_soll_an_von, datumzeit_ist_an_von) AS timediff_an_seconds, 
+    TIMEDIFF (datumzeit_soll_ab_von, datumzeit_ist_ab_von) AS timediff_ab, 
+    TIMESTAMPDIFF (SECOND, datumzeit_soll_ab_von, datumzeit_ist_ab_von) AS timediff_ab_seconds, 
+    TIMESTAMPDIFF (SECOND, datumzeit_soll_an_von, datumzeit_soll_ab_von) AS halt_soll_time_seconds, 
+    TIMESTAMPDIFF (SECOND, datumzeit_ist_an_von, datumzeit_ist_ab_von) AS halt_ist_time_seconds 
 FROM 
-    fahrzeiten_soll_ist fsi 
+    fahrzeiten_soll_ist fsi
+WHERE fahrt_id=26808 AND linie=6 AND datum__nach='2021-01-01' 
 LIMIT 40000; 
 
-  select*from aufgabe7_time_difference;
+  SELECT*FROM aufgabe7_time_difference;
