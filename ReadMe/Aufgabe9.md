@@ -15,7 +15,7 @@ Erarbeitetes Script:
 
 Link zum Script:[Script](/Scripts/Aufgabe9/create_arrival_times_table.sql)
 
-Die erzeugte Tabele sieht wie folgt aus:(teil ausschnitt)
+Die erzeugte Tabelle sieht wie folgt aus: Tteilausschnitt)
 
 ![tabelle](/Images/Aufgabe9/tabelle.JPG)
 

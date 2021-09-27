@@ -1,5 +1,5 @@
 # Aufgabe 10
-Für die Linie 6 wurden die 20 grösten Verspätungen ermittelt. Dazu sollte eine Liste erzeugt werden mit folgenden Spalten:
+Für die Linie 6 wurden die 20 grössten Verspätungen ermittelt. Dazu sollte eine Liste erzeugt werden mit folgenden Spalten:
 - id (PK) int 
 - haltepunkt_id int (FK zu Haltepunkt) 
 - halt_lang varchar 
@@ -23,13 +23,13 @@ Die Liste sieht wie folgt aus:
 
 ![script_liste](/Images/Aufgabe10/view.JPG)
 
-Für die Visualisierung wurde ein Script erstellt das eine Tabelle erzeugt die man als CSV file kann exportieren:
+Für die Visualisierung wurde ein Script erstellt, welches eine Tabelle erzeugt die man als CSV file  exportieren kann:
 
 ![script_export](/Images/Aufgabe10/script_export.JPG)
 
-Link zum Script:[Script](/Scripts/Aufgabe10/delay_per_line_export.sql)
+Link zum Script:[Script](/Scripts/Aufgabe10/delay_per_line_exportvisu.sql)
 
-Die rzeugte CSV Datei sieht wie folgt aus
+Die erzeugte CSV Datei sieht wie folgt aus
  <table>
   <thead>
     <tr>
@@ -63,7 +63,7 @@ Die rzeugte CSV Datei sieht wie folgt aus
 
 Link zur Tabelle:[Tabelle](/csv.files/maps.timedelay.csv)
 
-Das Ergebniss auf der Seite https://maps.co/gis/ sieht wie folgt aus:
+Das Ergebnis auf der Seite https://maps.co/gis/ sieht wie folgt aus:
 
 ![mapping.visu](/Images/Aufgabe10/mapping.jpg)
 

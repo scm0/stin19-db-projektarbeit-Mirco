@@ -30,7 +30,7 @@ Bahnhof Tiefenbrunnen.
 
 ### Download der Daten
 
-Für diese Aufgaben werden die CSV Daten von der VBZ und ein MYSQL8 Schema vbzdata.
+Für diese Aufgaben werden die CSV Daten von der VBZ und ein MYSQL8 Schema vbzdata verwendet.
 
 Es sind folgende Daten zu Downloaden und in einem Ordner zu Speichern:
 - Haltestellen.csv
@@ -80,7 +80,7 @@ Schritt 6:
 Schritt 7:
 - ![schritt7](/Images/Aufgabe1-5/mig_save_task.jpg)
 
-Anschliessend müssen in der Tabele unter Columns die Primarey Key gesetzt werden.
+Anschliessend müssen in der Tabelle unter Columns die Primarey Key gesetzt werden.
 
 ## Aufgabe 4 Migration Haltestelle
 

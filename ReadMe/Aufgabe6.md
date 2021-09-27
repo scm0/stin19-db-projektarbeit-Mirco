@@ -1,7 +1,7 @@
 # Aufgabe 6 Bereinigung der Tabellen und Constraints
 
 Bei der Bereinigung der Tabellen geht es um das Hinzufügen von Primärschlüsseln und die 
-Verwendung der korrekten Datentypen (zum Beispiel für Date). 
+Verwendung der korrekten Datentypen (zum Beispiel für Daten). 
 
 ## Schritt 1
 
@@ -12,7 +12,7 @@ Befehl: ALTER TABLE fahrzeiten_soll_ist ADD id INT PRIMARY KEY AUTO_INCREMENT FI
 ## Schritt 2
 
 Die Foreign Key Constraints von fahrzeiten_soll_ist nach haltepunkt sollen eingefügt werden.
-Der erste geht von halt_punkt_id_von zu halt_punkt_id und der zweite geht von halt_punkt_id_nach zu haltpunkt_id.
+Der Erste geht von halt_punkt_id_von zu halt_punkt_id und der Zweite geht von halt_punkt_id_nach zu haltpunkt_id.
 
 Befehl: 
 - ALTER TABLE fahrzeiten_soll_ist ADD CONSTRAINT fahrzeiten_soll_ist_FK FOREIGN KEY (halt_punkt_id_von) REFERENCES haltepunkt(halt_punkt_id); 
@@ -80,8 +80,8 @@ Die dazugehörigen Befehle lauten wie folgt:
 
 ## Schritt 5:
 
-Gewisse Datentypen werden nun Konvertiert. Die Spalten die wir in Schritt 4 erstellt haben werden nun befüllt.
-Züsätzlich werden weiter Spalten erstellt.
+Gewisse Datentypen werden nun konvertiert. Die Spalten die wir in Schritt 4 erstellt haben, werden nun befüllt.
+Züsätzlich werden weitere Spalten erstellt.
 
 <table>
    <tbody>

@@ -1,9 +1,9 @@
 # Aufgabe 8
 ## Aufgabe a
 Die Abfrage soll  fahrweg_id, linie, richtung, Fahrwegnummer (fw_no) und die Fahrwegbezeichnung 
-(fw_lang) enthalten. Die View soll die verschiedenen Varianten anzeigen die es pro Richtung gibt.
+(fw_lang) enthalten. Die View soll die verschiedenen Varianten anzeigen, welche es pro Richtung gibt.
 
-Für die Abfrage musste **SELECT DISTINCT** verwendet werden, das eine Linie nur einmal erscheint.
+Für die Abfrage muss **SELECT DISTINCT** verwendet werden, dass eine Linie nur einmal erscheint.
 
 Das Script sieht wie folgt aus:
 
